@@ -38,7 +38,7 @@ b,strong{
 #page{
 	width: 100%;
 	position: relative;
-	width: 1020px;
+	max-width: 1020px;
     margin: 0 auto;
 	background: #ffffff none repeat center top;
     background-size: auto;
@@ -170,6 +170,7 @@ b,strong{
 .bit-row{
 	background: #FFFFFF;
 	width: 100%;
+	padding-bottom: 50px;
 }
 .banner{
 	padding:20px 20px 0 20px;
@@ -230,12 +231,19 @@ b,strong{
 	float: left;
 	position: relative;
 }
+.row-left,.row-right{
+	width: 24%;
+}
+.row-center{
+	width: 48.7%;
+}
 .row-list{
 	border-top: 1px solid rgba(5,71,25,0.1);
     border-bottom: 1px solid rgba(5,71,25,0.1);
     border-left: 1px solid rgba(5,71,25,0.1);
     border-right: 1px solid rgba(5,71,25,0.1);
     position: relative;
+	height: 190px;
 }
 .row-list .row-title{
 	background: #f7f7f7;
@@ -263,14 +271,86 @@ b,strong{
 	clear: both;
 	font-size: 14px;
 	padding:5px;
+	text-align: center;
+	overflow: hidden;
+}
+.ul-img01{
+	width: 161px;
+	height: 52px;
+	margin-top: 35px;
 }
 .ul-li{
 	line-height: 30px;
 	height: 30px;
 	text-align: left;
 }
+.ul-li a:hover{
+	color: #8D9095;
+}
 .ul-li i{
 	display: inline-block;
 	width: 12px;
 	height: 12px;
+}
+.vc-inner{
+	margin:10px;
+	width: 29%;
+	float: left;
+	height: 130px;
+}
+.vc-inner a img{
+	width: 119px;
+	height: 90px;
+}
+.vc-inner p{
+	font-size: 12px;
+	line-height: 14px;
+	color: #373a41;
+	margin-top: 5px;
+	font-weight: 600;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+.rows{
+	height: 130px;
+}
+.row-com{
+	padding:20px;
+	line-height: 1.5rem;
+}
+/* footer 底部 */
+.footer{
+	padding-top:20px;
+	background: #005825 none repeat center top;
+	padding-bottom: 80px;
+}
+.wf-wrap,.wf-container{
+	padding:0 20px;
+}
+.wf-com01{
+	margin-top: 20px;
+}
+.wf-com01 p,.wf-com02 p{
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 25px;
+}
+.wf-com01 p img{
+	width: 100px;
+	height: 100px;
+}
+
+
+@media screen and (max-width: 960px){
+	
+    .row-center,.row-left,.row-right{
+		float: none;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.vc-inner{
+		width: 17%;
+	}
 }
